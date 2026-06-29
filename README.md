@@ -1,2 +1,0 @@
-# julesboeuf.github.io
-Portfolio
