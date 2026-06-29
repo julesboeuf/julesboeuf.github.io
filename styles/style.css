@@ -1,0 +1,141 @@
+/*Main style*/
+body {
+    background-color:floralwhite;
+}
+
+/*Navigation bar*/
+header {
+    background-color: floralwhite;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+    overflow:visible;
+    display: flex;
+    justify-content: space-between;
+    padding:19.5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+header a {
+    color:black;
+    text-decoration:none;
+    text-align: center;
+    padding:20px;
+}
+header a:hover {
+    background-color: rgb(18, 138, 125);
+}
+header a:visited {
+    color:black;
+}
+
+/*Website informations and langage selector*/
+.header_lang {
+    color:black;
+}
+.header_lang:hover {
+    background-color: rgb(18, 138, 125);
+}
+.header_lang img {
+    width: 10px;
+}
+.header_info {
+    font-style: italic;
+    color:rgb(18, 138, 125);
+    padding:0;
+    margin:20px;
+}
+.header_info:hover {
+    background-color: transparent;
+}
+.header_pres {
+    color:rgb(18, 138, 125); 
+    font-style: italic;
+}
+.header_pres:hover {
+    background-color: transparent;
+}
+
+/*Website content*/
+main div{
+    display:inline-block;
+    margin:20px;
+    vertical-align: top;
+    text-align: justify;
+}
+main h1 {
+    background-color: rgba(18, 138, 125, 0.549);
+    border-left: solid;
+    border-width: 4px;
+    border-color: rgb(18 138 125);
+}
+main h2 {
+    background-color: rgba(2, 121, 139, 0.549);
+    border-left: solid;
+    border-width: 4px;
+    border-color: rgb(2 121 139);
+}
+main ul {
+    list-style-type: none;
+}
+main a {
+    color:black;
+    text-decoration:none;
+    text-align: center;
+}
+main a:visited {
+    color:black;
+}
+
+/*Project presentation style*/
+.project_class{
+    display:block;
+}
+.project_pres {
+    margin:10px;    
+    background-color: rgba(2, 121, 139, 0.549);  
+    border:solid;
+    border-width: 1px;
+    border-color: black;
+    text-align: justify;
+    width:250px;
+}
+.project_pres p {
+    padding-left:7px;
+    padding-right:7px;
+}
+.project_pres:hover {
+    background-color: rgb(2 121 139);
+}
+.keywords{
+    font-style: italic;
+}
+.project_detail h1 {
+    background-color:rgba(137, 137, 137, 0.549);
+    border-left: solid;
+    border-width: 4px;
+    border-color: rgb(137, 137, 137);
+}
+
+/*Download button*/
+.download_button {
+    border: solid;
+    border-width: 1px;
+    padding:20px;
+    border-color: black;
+    background-color: rgba(2, 121, 139, 0.549);
+}
+.download_button:hover {
+    background-color: rgb(2 121 139);
+}
+
+/*Bottom page*/
+footer {
+    padding:20px;
+    border:solid;
+    border-width: 1px;
+    border-color: black;
+    background-color:floralwhite;
+    text-align: center;
+}
+
