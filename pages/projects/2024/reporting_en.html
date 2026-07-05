@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="reporting_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="reporting_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Multivariate analysis&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    The goal of this project was to study the poverty rate in France making our results accessible through a web interface. The final app needed to have the following features: displaying how the poverty rate changes over time and across regions, showing a multi-factor analysis, and the results of an econometric model.
+                    <br/><br/>
+                    The whole project was built with RShiny, an R library used to build web apps. We used INSEE data on the poverty rate in France to study how poverty is spread out at different geographical levels, and to track the changes over the years. In the app, some options let the user focus on a chosen area and pick a year to see its poverty rate. The data was then studied at the regional level: we used the k-means algorithm to build clusters of regions, to find and group together regions where the poverty rate behaves in a similar way. The user could choose the maximum number of clusters to group the regions into. The last model we built was a linear regression: starting from several variables about the poverty rate in France at the department level, we looked for the one that best explained the poverty rate by department, which turned out to be the percentage of social benefits that households receive in that department.
+                    <br/><br/>
+                    The project ended with a presentation of the app we built, including a demo of its features and a discussion of the results.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Deepening my knowledge of R</li>
+                        <li>Building a dynamic, interactive interface</li>
+                        <li>Building a tool made for decision-making</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2024/rshiny/Image1.png" alt="img" style="width: 564px;"/>
+                    <p class="keywords">Analysis of the poverty rate over time and by geographic areas</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/rshiny/Image2.png" alt="img" style="width: 564px;"/>
+                    <p class="keywords">Multivariate analysis</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/rshiny/Image3.png" alt="img" style="width: 557px;"/>
+                    <p class="keywords">Econometric model</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

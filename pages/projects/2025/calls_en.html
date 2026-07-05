@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="calls_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="calls_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Statistical study in a specific field&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    This project was given to us by someone from Inter Mutuelle Assistance (IMA), we had to build two Machine Learning models to predict the daily number of cases expected over the next 15 months. To do this, we were given a file containing the number of phone calls recorded from 2013 to 2024. The cases were splitted into two groups: those covering trips under 50 km, and those covering trips over 50 km.
+                    <br/><br/>
+                    We first studied and got familiar with the data to better understand the variable we needed to predict. This allowed us to see a clear break in activity during the Covid period, caused by a drop in the number of trips at that time. To make sure our data was ready to be used in a Machine Learning model, this bias had to be corrected to improve prediction quality. After clearly identifying the affected data, it was replaced with the average of the previous three years, which removed these biases.
+                    <br/><br/>
+                    New variable were added to the data in order to have new pieces of information, by creating new True/False variables from the dates. For example : whether a date falls on a weekend, during a holiday period. Adding this information gave our models some useful new variables.
+                    <br/><br/>
+                    We chose to predict only the number of cases covering trips over 50 km. Once the data was ready, two models were built using R. The first was a multiple linear regression, and the second was a time series model. The second model was chosen because the data showed seasonal patterns with cycles of 366 periods. The models were trained and tested on two separate data sets, and the results were good: an R² of 84% for the first model, and 90% for the second.
+                    <br/><br/>
+                    To make it easier to share the predictions, a dynamic interface was built in Power BI. This let users view the predictions and compare them with real activity. A report was also written at the end of the project.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Using and understanding Machine Learning use cases</li>
+                        <li>Understanding the needs and requests of a client</li>
+                        <li>Building a dynamic graphical interface</li>
+                        <li>Using multiple linear regression in R</li>
+                        <li>Building a time series model</li>
+                        <li>Writing a report</li>
+                        <li>Choosing a statistical model that fits the context</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/machine_learning/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Biais correction </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/machine_learning/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Graph to compare the predicted data and the reel data </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/machine_learning/Image3.png" alt="img" style="width: 589px;"/>
+                    <p class="keywords">Overview of the app made with PowerBI</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

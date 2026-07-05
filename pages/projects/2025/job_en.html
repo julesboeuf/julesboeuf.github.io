@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="job_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="job_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Fixed-Term contract at INRAE&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    This fixed-term contract took place in the URPF3 unit at the INRAE research center in Nouvelle-Aquitaine-Poitiers, in Lusignan (FRANCE). It was a follow up of my work I did for my third-year internship (BUT3). That last internship aimed to study and compare the growth of winter wheat plants under different specific meteorological conditions. In order to do this, a tool to simulate wheat growth called CN-Wheat was used. The weather data used as input came from the statistical methods called "typical meteorological years", which I had developed during my second-year internship (BUT2).
+                    <br/><br/>
+                    For this contract, I had to build a graphical interface to show the simulated growth of a plant in real time, with metrics to allow the comparison of growth across different weather scenarios.
+                    <br/><br/>
+                    A Python pipeline was built to clean and filter the meteorological data used in the inputs of the CN-Wheat model. The Climatik platform was used to send daily requests to get recent meteorological data. When the data was prepared, simulations were run for each meteorological scenario. The results were then collected and studied to calculate different growth metrics, such as the Leaf Area Index (LAI).
+                    <br/><br/>
+                    A graphical interface was then built as a PNG image that was updated every hour, showing the plant growth, various weather metrics, and a 3D view of the plant model.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Understanding and using a Python tool made for modeling</li>
+                        <li>Working with PNG and SVG images</li>
+                        <li>Building an automated, modular Python data pipeline</li>
+                        <li>Managing and optimizing a large amount of data</li>
+                        <li>Understanding the needs and requests of a client</li>
+                        <li>Choosing statistical measures that fit the context</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/job2/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Overview of the interface</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

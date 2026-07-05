@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="nosql_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="nosql_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Migration vers une base de données NoSQL&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    Ce projet s’inscrit dans le cadre d’un module visant à l’apprentissage des principes et de l’exploitation des bases de données orientées Big Data. L’objectif était de partir d’une base de données relationnelle pour la convertir en une base de données MongoDB. Il a alors fallu s’approprier les données en analysant le schéma de la base de données d’origine, ainsi que son contenu.
+                    <br/><br/>
+                    À la différence d’une base de données traditionnelle, les base de données comme MongoDB (orientée document) stockent leur donnée sous forme de collections de documents. Les données sont enregistrées sous le format JSON, qui permet de conserver un format structuré et faciliter la jointure de documents. Pour transitionner vers une base de données MongoDB, une phase de réflexion était nécessaire afin de réfléchir au nombre de collections nécessaires ainsi que le format des fichiers JSON. La base de données utilisée pour ce projet contenait des informations concernant la gestion du covid-19 dans différents pays. Chaque table concernait un aspect différent de la gestion de cette crise : vaccinations, nombre d’hospitalisation, de décès… Etc. Ainsi que des statistiques relatives aux pays : nombre d’habitant, continent, PIB par exemple. Le choix de la structure de la base de données MongoDB s’est alors porté sur deux collections, une servant à stocker les informations économiques/géographiques/sociales des pays, l’autre contenant les statistiques liées au covid à l’échelle journalière pour chaque pays. Dans ce schéma, la clé commune entre les deux collections était le nom du pays.
+                    <br/><br/>
+                    La migration s’est déroulée en langage Python, grâce à la librairie Pymongo permettant de se connecter et gérer localement l’outil MongoDB. Les données ont d’abord été nettoyées, car des dates devaient être corrigées, et des indicateurs statistiques ont été réalisés. Pour effectuer la transformation, des requêtes SQL ont été préparées pour obtenir les données dans un DataFrame. Ensuite, elles ont été traitées de telle sorte qu’elles correspondent au format désiré pour la collection de la nouvelle base de données.
+                    <br/><br/>
+                    Pour valider la migration, 13 requêtes de tests ont été réalisées. Cette validation repose sur la comparaison des résultats de deux requêtes similaires : une requête SQL exécutée sur la base de données d’origine, et une requête Pymongo exécutée sur la nouvelle base de données. Les résultats obtenus étaient identiques, ce qui a confirmé le bon fonctionnement de la migration. Un tableau de bord a ensuite été mis en place pour mettre en valeurs les données.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Utilisation, stockage, exploitation et création d’une base de données NoSQL orientée document</li>
+                        <li>Création de requête Pymongo</li>
+                        <li>Approfondissement des langages Python et SQL</li>
+                        <li>Compréhension des enjeux liés à la transition vers le Big Data</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/nosql/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Requête SQL ppur obtenir la liste des pays avec le pourcentage de personnes totalement vaccinées par rapport à leur population, triée par pourcentage décroissant</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/nosql/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Version MongoDB de la requête SQL</p>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

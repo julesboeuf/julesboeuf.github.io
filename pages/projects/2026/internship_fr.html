@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="internship_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="internship_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Stage de M1&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    Ce stage s’est déroulé au sein de l’unité PGBA dans les laboratoires de l’UMR ISP, à Tours (France).  
+                    <br/><br/>                    
+                    Le logiciel Genofig est un outil de visualisation de régions génomiques bactériennes développé en Python. Il permet de comparer plusieurs séquences en générant des figures hautement personnalisables au format SVG. L’objectif de ce stage était de résoudre certaines limites qu’il rencontrait. D’abord, son utilisation avec plusieurs génomes complets provoquait des temps de traitement très longs lorsque l’on voulait calculer des homologies à cause d’un problème de gestion des alignements.
+                    <br/><br/>
+                    Pour corriger cela, des stratégies utilisant la parallélisation de processus ont été utilisées afin de répartir l’exécution des alignements sur plusieurs cœurs du processeur. Un autre algorithme d’alignement se nommant MMSeqs2 a également été testé pour accélérer les calculs. Pour vérifier l’efficacité de ces méthodes, un benchmark a été mis en place pour mesure les gains de temps. Au final, les résultats ont montré que la parallélisation permettait de réduire fortement les temps de traitement et que MMSeqs2 était plus rapide sur de grands jeux de données.
+                    <br/><br/>
+                    Une seconde limite de Genofig était que les informations fournies dans les sorties des alignements étaient insuffisantes pour mener des analyses complètes de génomique comparative. Afin d’améliorer Genofig, deux nouveaux modes de visualisation ont été intégrés, permettant l’affichage des sites polymorphes dans les régions homologues. Cela est important pour identifier des zones très conservées au sein de ces régions. Cet ajout a été rendu possible en exploitant les BTOP provenant de fichiers de sortie de BLAST. Il s’agit d’indicateurs décrivant les caractéristiques de chaque alignement, permettant de faciliter la détection des positions polymorphes.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Utilisation et paramétrage de différents algorithmes d’alignements de séquences nucléiques (BlastN, TBlastX, MMSeqs2)</li>
+                        <li>Développement et optimisation d’un logiciel en Python</li>
+                        <li>Mise en place de stratégie de Multi-Threading</li>
+                        <li>Analyse et création d’un benchmark</li>
+                        <li>Utilisation de Genomes Browsers</li>
+                        <li>Rédaction d’un rapport de stage</li>
+                        <li>Génération et manipulation d’images au format SVG </li>
+                        <li>Recherche bibliographique </li>
+                        <li>Approfondissement de mes connaissances en biologie fondamentale</li>
+                        <li>Interprétation des demandes et des besoins d’un commanditaire</li>
+                    </ul>                                    
+                </p>
+
+            </div>
+
+            <div class="project_detail" style="width:650px;">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+
+                <div>
+                    <img src="../../../images/projects/2026/stage3/Image1.png" alt="img" style="width: 600px;;"/>
+                    <p class="keywords">Mesure du temps d’alignement (en secondes) pour chaque test du Benchmark, et chaque méthode d’exécution du BLAST</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2026/stage3/Image2.png" alt="img" style="width:600px;"/>
+                    <p class="keywords">Alignement d’une sequence d’Acinetobacter baumanii contre une séquence d’Acinetobacter junii, où la flèche rose désigne une GMP synthase, et la flèche jaune un gène d’intérêt ANT(3”)-IIa [Zhang et al. 2017]. Le sens des flèches indique le sens de la transcription. (A) Affichage des régions homologues avec la version d’origine de Genofig, avec le taux d’identité en % ; (B) Affichage des positions polymorphes avec la version en barres, l’échelle indique la couleur selon le nombre de positions polymorphes ; (C) Affichage avec la version gradient, avec une taille de bloc de 2 pixels et une fenêtre de comptage à 70 pixels, l’échelle indique le nombre de positions polymorphes dans la fenêtre de comptage; (D) Affichage avec la version gradient, avec une taille de bloc à 50 pixels, et une fenêtre de comptage à 300 pixels. Le bleu indique une faible concentration de positions polymorphes, tandis que le rouge indique une forte concentration.</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2026/stage3/Image3.png" alt="img" style="width:600px;"/>
+                    <p class="keywords">Interface du module homologie de Genofig, servant à générer les alignements et afficher ou non les regions homologues et positions polymorphes</p>
+                </div>                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

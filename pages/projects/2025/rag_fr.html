@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="rag_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="rag_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Création d’un assistant conversationnel&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    L’objectif de ce travail était de construire un assistant permettant de faciliter la recherche d’informations dans les différents contrats proposés par l’IMA à ses bénéficiaires. Ce dernier a été mis à disposition à travers une application web et devait pouvoir répondre aux questions des employés de l’IMA de manière concise et précise en extrayant les informations pertinentes des contrats.
+                    <br/><br/>
+                    Pour mettre en œuvre ce projet, nous avions dû réaliser un RAG (Retrieval-Augmented Generation, ou génération augmentée de récupération en français) connecté à une base de données contenant chacune des informations des contrats. Le principe de fonctionnement d’un RAG est de répondre aux questions des utilisateurs en se basant sur les documents dont il dispose. Pour cela, il communique avec une base de données lui fournissant les documents appropriés à la requête à laquelle il doit répondre. Ensuite, grâce à une utilisation détournée d’une IA (dans notre cas, Gemini), il l’interroge pour qu’il réponde à sa question en lui envoyant le contexte et les documents concernés. Le résultat final est ensuite retourné à l’utilisateur.
+                    <br/><br/>
+                    L’extraction des informations des contrats s’est faite avec la librairie Python BeautifulSoup, qui permet de scrapper les informations d’un document html. Ensuite, la librairie ChromaDB nous a donné l’accès à une base de données vectorisée, dont le principe de fonctionnement permet de faciliter la recherche de similitude entre des documents. Pour la partie interface et génération de réponse, nous avons utilisé la librairie Genai qui fait l’intermédiaire entre notre script et l’assistant Gemini de Google, ce qui permet de générer des réponses à l’utilisateur. Et Streamlit est outil de développement d’applications web en Python qui nous a permis de réaliser une interface dynamique pour discuter avec l’assistant.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Compréhension de l’utilisation des bases de données vectorisées</li>
+                        <li>Apprentissage du principe de la tokenisation de données</li>
+                        <li>Utilisation de Python</li>
+                        <li>Développement d’une interface dynamique interactive</li>
+                        <li>Extraction des données d’un document HTML</li>
+                        <li>Utilisation de la modularité au sein d’un projet de programmation</li>
+                        <li>Compréhension des principes d’un RAG</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/chatbot/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Aperçu de l'interface du chatbot </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/chatbot/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Schéma de la chaîne de traitement des données </p>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

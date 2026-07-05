@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="nosql_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="nosql_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;NoSQL Database&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    This project was part of a course on the basics of Big-Data databases. The goal was to start from a relational database and convert it into a MongoDB database. We first had to study the original database's structure and content.
+                    <br/><br/>
+                    Unlike a traditional database, document-based databases, like MongoDB, store the data as collections of documents. Data is saved in JSON format, which keeps a clear structure and makes it easier to merge documents. In order to convert it into a MongoDB database, we had to think carefully about how many collections we would need and how the JSON files should be structured. The database used for this project was about how various countries managed Covid-19. Each table covered a different part of the crisis management: vaccinations, number of hospital stays, number of deaths, as well as basic country statistics such as population, continent, or GDP. We decided to structure the MongoDB database using two collections: one to store the economic, geographic, and social information for each country, and the other to store daily Covid statistics for each country. In this structure, the primary key between the two collections was the country name.
+                    <br/><br/>
+                    The migration was done in Python, using the Pymongo library to connect to and manage the MongoDB database locally. The data was first cleaned, since some dates needed fixing, and some statistical measures were calculated. To finish the conversion, SQL queries were written to put the data into a DataFrame. The data was then processed to match the format needed for the collections of the new database.
+                    <br/><br/>
+                    In order to check that all had worked correctly, 13 test queries were run. They compared the results of two similar queries: one SQL query on the original database, and the equivalent Pymongo query on the new database. The results matched, which confirmed that all had worked properly. A dashboard was then built to visualize the data.
+                    <br/><br/>
+                    <b>Skills gained:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Using, storing, managing, and creating a document-based NoSQL database</li>
+                        <li>Writing Pymongo queries</li>
+                        <li>Deepening my knowledge of Python and SQL</li>
+                        <li>Understanding the issues involved when migrating to Big Data</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/nosql/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">SQL query that return the percentage of fully vaccinated people in the population, for each country, sorted in descending order</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/nosql/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">The same query in MongoDB</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="regression_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="regression_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Expliquer ou prédire une variable quantitative à partir de plusieurs facteurs&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    Dans le cadre de ce projet, nous avons vu l’utilisation du Machine Learning sous Python pour estimer la valeur de biens immobiliers. Pour réaliser cela, nous disposions de plusieurs variables de données concernant des blocs de maisons, telles que : le revenu médian, la localisation géographique du bloc, le nombre de chambres, la population. Nous avons alors écrit un script en Python permettant d’estimer la valeur de ces blocs.
+                    <br/><br/>
+                    L’estimation des prix était d’abord précédée par une phase de nettoyage des données, il fallait gérer les valeurs manquantes et les valeurs extrêmes. Puisque nous avions 20300 lignes de données et seulement 7 valeurs manquantes, nous avons décidé de supprimer directement les lignes concernées car nous considérions qu’il restait assez de données pour se le permettre. Pour les valeurs extrêmes, une analyse du jeu de données a indiqué que les données n’étaient pas homogènes, certaines variables étaient beaucoup plus dispersées que d’autres. Plusieurs méthodes différentes de gestion de valeurs extrêmes ont été testées pour résoudre cela.
+                    <br/><br/>
+                    Une fois que les données étaient prêtes, nous pouvions commencer à estimer les valeurs des biens immobiliers. La librairie Python « SciPy » proposait des commandes permettant de mettre en place un modèle de Machine Learning faisant de la régression linéaire multiple, ce qui correspondait à nos besoins. Nous avons alors séparé les données en deux jeux de données différents : un d’entraînement et un de test pour valider le modèle. Pour entraîner le modèle, nous avons utilisé la méthode de la validation croisée, qui consiste tester les performances du modèle en séparant les données en sous-groupes qui alterneront entre jeu d’entraînement et jeu d’essai. Une fois que le modèle était entraîné, nous pouvions faire des estimations. Le modèle a été testé avec différentes méthodes de gestions de valeurs extrêmes, pour voir si cela changeait les résultats. La méthode donnant les meilleurs résultats était celle où l’on conservait les valeurs extrêmes.
+                    <br/><br/>
+                    Pour finaliser le projet, un rapport a été rédigé, résumant les étapes que l’on a suivi pour atteindre nos résultats.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Approfondissement de mes connaissances en Python</li>
+                        <li>Utilisation et apprentissage de méthodes de gestion des valeurs extrêmes</li>
+                        <li>Apprentissage des principes et de l’utilisation du Machine Learning</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2024/rlm/Image1.png" alt="img" style="width: 422px;"/>
+                    <p class="keywords">Extrait des données utilisées </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/rlm/Image2.png" alt="img" style="width: 391px;"/>
+                    <p class="keywords">Comparaison des estimations et des valeurs réelles sur les jeux d'apprentissage et de test (100 premières valeurs) </p>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

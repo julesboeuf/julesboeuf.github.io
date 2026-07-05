@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="bin_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="bin_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Simulation de la réparation de l’ADN&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    L’objectif de ce projet de groupe était de simuler la dynamique de recrutement et de dissociation de la protéine PARP1 au niveau de lésions sur de l’ADN. La protéine PARP1 joue un rôle important dans la réparation en se fixant sur les zones endommagées puis en catalysant la formation de polymères qui permettront la réparation par la suite. 
+                    <br/><br/>                    
+                    Pour caractériser et simuler son arrivée sur une région d’ADN, des modèles simplifiés ont été développés en suivant deux approches : un modèle stochastique et un modèle déterministe. 
+                    <br/><br/>
+                    Dans un premier temps, des données expérimentales ont été récoltées en laboratoire afin d’avoir des mesures de références pour les modèles. Nous avons utilisé des cellules transfectée avec une construction PARP1-GFP, ce qui rend la protéine fluorescente sous certaines longueurs d’ondes. La méthode de relevé consistait à endommager volontairement une zone d’ADN sur le noyau, puis d’acquérir des images toutes deux secondes afin d’observer l’arrivée et la dissociation de la protéine PARP1.  Pour quantifier l’évolution de la concentration en PARP1, les images ont été traités sur le logiciel Fiji. Sur ces dernières, l’intensité de PARP1 était relevée sur trois points témoins : la zone de cassure, le noyau, et une zone en dehors de la cellule. Les données ont ensuite été corrigée puis normalisées.
+                    <br/><br/>
+                    Le premier modèle de simulation suivait une démarche déterministe en utilisant un système d’équation différentielles décrivant la diffusion de PARP1 dans le temps et l’espace. 
+                    <br/><br/>                    
+                    Le second modèle, suivant une démarche stochastique, consistait à simuler la diffusion et les interactions sur chaque molécule de PARP1 dans la cellule en mettant en place un algorithme de type marche aléatoire. Cela consistait à suivre le déplacement de chaque molécule et leur attribuer un état selon si elles se trouvaient dans la zone d’ADN cassée ou non.
+                    <br/><br/>
+                    Pour optimiser les résultats de ces deux modèles, une recherche de paramètres a été mise en place en utilisant un Grid Search. L’ensemble des scripts ont été codés en Python. 
+                    <br/><br/>
+                    Le projet s’est conclu sous la forme d’un rapport, et d’une présentation orale. 
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Utilisation du logiciel Fiji pour le traitement d’images</li>
+                        <li>Simulation d’un processus biologique en Python</li>
+                        <li>Mise en place et validation d’un modèle mathématique à partir de données expérimentales</li>
+                        <li>Optimisation d’un modèle</li>
+                        <li>Rédaction d’un rapport scientifique</li>
+                        <li>Manipulation et visualisation de données avec Python</li>
+                        <li>Développement de mes connaissances en biologie</li>
+                    </ul>                                    
+                </p>
+
+            </div>
+
+            <div class="project_detail" style="width:650px;">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+
+                <div>
+                    <img src="../../../images/projects/2026/bin/Image1.png" alt="img" style="width: 300px;;"/>
+                    <p class="keywords">Zone relevé sur les cellules : A) Zone de cassure ; B) arrière-plan ; C) cellule</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2026/bin/Image2.png" alt="img" style="width:600px;"/>
+                    <p class="keywords">Évolution de la fluorescence normalisée de PARP1 non traitée  en fonction du temps (échantillonnage : 1 image / 2 s).</p>
+                </div>           
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

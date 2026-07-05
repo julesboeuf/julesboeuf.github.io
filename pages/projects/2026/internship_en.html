@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="internship_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="internship_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Master 1 Internship&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    This internship took place in the PGBA unit, at the ISP laboratories (UMR ISP), in Tours (France). 
+                    <br/><br/>                    
+                    Genofig is a software used for the visualization of bacterial genomic regions, and was developed in Python. It enables the generation of highly customizable SVG figures to compare multiple sequences. The goal of this internship was to work on several issues present on the version 1.1.1. When working with more than two complete genomes, homology calculations caused long processing times due to some problems in the alignements management.
+                    <br/><br/>
+                    To solve this issue, computing parallelization strategies were added to distribute the alignement tasks across multiple cores on the CPU. An alternative alignement algorithm, MMSeqs2, was tested to see if it was quicker than BlastN. Those methods were evaluated by using a benchmark that was developped to measure their performances. The results showed that parallelization reduced processing times, and that MMSeqs2 was more fitted to make quicker searches than BlastN on large datasets.
+                    <br/><br/>
+                    A second limitation of Genofig was that the pieces of informations available in the outputs of the alignments were insufficient to produce a complete comparative genomic analysis. To change that, two new visualization modes were implemented, whose purpose was to display the polymorphic sites within the homologous regions. This was made possible by adding the BTOP in the BLAST outputs. It’s a string composed of multiple numbers and characters provided for each alignement, that provide detailed information such as the positions of matches and indels, which make easier the detection of the polymorphic sites.
+                    <br/><br/>
+                    <b>Skills learned :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Using and setting up different tools for aligning DNA sequences (BlastN, TBlastX, MMSeqs2)</li>
+                        <li>Adding new features and improving a software written in Python</li>
+                        <li>Building a multi-threading strategy</li>
+                        <li>Analyzing results and creating a benchmark</li>
+                        <li>Using Genome Browsers</li>
+                        <li>Writing an internship report</li>
+                        <li>Creating and editing SVG images</li>
+                        <li>Searching scientific literature</li>
+                        <li>Deepening my knowledge of basic biology</li>
+                        <li>Understanding the needs and requests of a client</li>
+                    </ul>                                    
+                </p>
+
+            </div>
+
+            <div class="project_detail" style="width:650px;">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+
+                <div>
+                    <img src="../../../images/projects/2026/stage3/Image1.png" alt="img" style="width: 600px;;"/>
+                    <p class="keywords">Alignment time (in seconds) for each benchmark test and each BLAST multi-threading method</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2026/stage3/Image2.png" alt="img" style="width:600px;"/>
+                    <p class="keywords">Alignment of an Acinetobacter baumanii sequence against an Acinetobacter junii sequence, where the pink arrow indicates a GMP synthase and the yellow arrow indicates a gene of interest, ANT(3”)-IIa [Zhang et al. 2017]. The direction of the arrows indicates the direction of transcription. (A) Show homologous regions using the original version of Genofig, showing the identity percentage; (B) Show the polymorphic positions using the lines version, where the color scale corresponds to the number of polymorphic positions; (C) Display using the gradient version, with a block size of 2 pixels and a counting window of 70 pixels; the scale indicates the number of polymorphic positions within the counting window; (D) Display using the gradient version, with a block size of 50 pixels and a counting window of 300 pixels. Blue indicates a low concentration of polymorphic positions, while red indicates a high concentration.</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2026/stage3/Image3.png" alt="img" style="width:600px;"/>
+                    <p class="keywords">The homology panel of Genofig, used to generate alignments and choose whether or not to display homologous regions and polymorphic positions</p>
+                </div>                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

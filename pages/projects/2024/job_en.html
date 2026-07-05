@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="job_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="job_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Fixed-term contract at INRAE&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    This fixed-term contract took place in the URP3F unit at the INRAE research center in Nouvelle-Aquitaine-Poitiers, in Lusignan (FRANCE). This contract was next part of my work from my second-year internship (BUT2), which goal was to code and test statistical methods used to summarize years of meteorological data into one single representative year. These methods are called "typical meteorological years".
+                    <br/><br/>
+                    After producing meteorological data representing the weather of the city of Lusignan, new methods were explored during this contract to try to produce extreme meteorological years. A bibliographic research led to choosing 4 methods, which were then coded in a Python script.
+                    <br/><br/>
+                    The second part of the contract involved writing R scripts to produce microclimate indicators, which describe the weather conditions of an area. For this, I had a literature review with the formulas usually used. These were coded as functions to make them easier to use. They would be used later to measure the accuracy and features of the typical meteorological years.
+                    <br/><br/>
+                    The last task during this contract was coding and optimizing scripts used to study the amount of solar radiation on a 3D surface. The context was to simulate how solar radiation is spread across a football stadium located in Nantes (FRANCE). This required to build a 3D model of the stadium by using the VGX format. The simulation was run on an existing Python script that was improved by adding multi-threading. Originally, the last step of the simulation was done in a MatLab script, but this had to be converted into an R script, which is much more efficient on matrix calculations.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Using Python and R</li>
+                        <li>Learning the basics of multi-threading in Python</li>
+                        <li>Searching scientific literature</li>
+                        <li>Maintaining and improving a script</li>
+                        <li>Building statistical climate indicators</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2024/job/Image1.png" alt="img" style="width: 594px;"/>
+                    <p class="keywords">Cumulated probability curve for the air temperature of the extreme meteorological years tested</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/job/Image2.png" alt="img" style="width: 504px;"/>
+                    <p class="keywords">3D model of the Marcel Saupin stadium (Nantes, FRANCE), made with VegeStar</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/job/Image3.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Results of a solar radiation simulation for March</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

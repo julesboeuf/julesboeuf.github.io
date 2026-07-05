@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="calls_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="calls_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Mener une étude statistique dans un domaine d’application&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    Dans le cadre de ce projet fourni par un intervenant de l’Inter Mutuelle Assistance, nous devions mettre en place deux modèles de Machine-Learning permettant de faire des prévisions sur le nombre de dossiers auxquels s’attendre sur les 15 prochains mois à l’échelle quotidienne. Pour parvenir à cela, un fichier contenant le nombre d’appels téléphoniques sur la période de 2013 à 2024 a été fourni. Les dossiers sont discriminés en deux catégories différentes : ceux dont le dossier d’assistance couvre un trajet de moins de 50km, et ceux qui couvrent un trajet de plus de 50km.
+                    <br/><br/>
+                    Une étape d’appropriation et d’analyse des données a été réalisée afin de mieux cerner la variable que nous devions prédire. Ceci nous a révélé la présence d’une rupture nette dans l’activité durant la période du Covid, ce qui s’explique par une baisse du nombre de déplacement durant à ce moment. Pour s’assurer que nos données étaient prêtes à alimenter un modèle de Machine Learning, il a fallu corriger ce biais pour éviter un mauvais ajustement et améliorer la qualité des prédictions. Après avoir identifié clairement les données concernées, elles ont été remplacées par la moyenne des trois dernières années, ce qui a fait disparaître ces ruptures.
+                    <br/><br/>
+                    Telles quelles, les données n’offraient pas beaucoup d’informations, les fichiers ont alors été enrichis en créant à partir des dates de nouvelles variables à modalité Vrai/Faux, par exemple : si la date est située dans un week-end, une période de vacances (pour chaque zone), un jour férié… Etc. Cet ajout d’information ont permis d’ajouter des variables déterminantes pour nos modèles.
+                    <br/><br/>
+                    Nous avions fait le choix de prédire seulement le nombre de dossiers couvrant des trajets à plus de 50km. Une fois les données prêtes à être utilisées, deux modèles ont été mis en place avec le langage R. Le premier était une régression linéaire multiple, tandis que le second était une série temporelle. Le choix de second modèle avait été motivé par la présence de variations saisonnières avec de cycles de 366 périodes dans les données. Les modèles ont été entraînés puis testés sur deux jeux données séparés, les résultats étaient satisfaisants : un R² de 84% pour le premier, et 90% pour le second.
+                    <br/><br/>
+                    Pour faciliter la mise à disposition des prédictions, une interface dynamique a été développée sous PowerBI. Cette dernière permettait de visualiser les prédictions, ainsi que de les comparer à l’activité réelle. Un rapport a également été réalisé pour conclure ce projet.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Utilisation et compréhension des cas d’usages du Machine Learning</li>
+                        <li>Interprétation des demandes et les besoins d’un commanditaire</li>
+                        <li>Réalisation d’un outil de suivi dynamique</li>
+                        <li>Utilisation de le régression linéaire multiple en R</li>
+                        <li>Mise en place d’une série temporelle</li>
+                        <li>Rédaction d’un rapport structuré et illustré</li>
+                        <li>Sélection d’un modèle statistique adapté à un contexte</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/machine_learning/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Correction de la rupture au sein des données </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/machine_learning/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Comparaison des estimations de la régression linéaire multiple et des valeurs réelles </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/machine_learning/Image3.png" alt="img" style="width: 589px;"/>
+                    <p class="keywords">Aperçu de l'application en PowerBI</p>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

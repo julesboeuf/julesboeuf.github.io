@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="neural_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="neural_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Introduction to Neural Networks&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    For this project, we had to build and optimize two neural network models. The goal was to get a model that could be classifying 1,000 images into 10 different categories. Two methods were tested: one based on feature descriptors, and one based on deep learning.
+                    <br/><br/>
+                    In the first attempt, the features of the images were converted into numbers using different descriptors, which break down each part of an image (colors, shapes, number of lines, number of corners) into numerical data. Our model was a multilayer perceptron, meaning a neural network made of several layers of neurons, where each layer connects to the next one. The data was cleaned and split into a training and a test dataset, using Python. To get the best possible results, several methods were used to avoid overfitting: normalizing the data, randomly turning off some neurons during training, and reducing the number of layers or neurons. In the end, we reached an average accuracy of 70% after 40 epochs. By testing other types of image descriptors, we reached a top F1 score of 84%, which means that the model was good at classifying the images.
+                    <br/><br/>
+                    The second approach worked with the images themselves, without descriptors, using convolution layers. These consist of a series of filters that scan an image and keep the most important features to summarize that data. This pieces of information is then reduced down to a size that neuron layers can use to classify the images, like in the first model. We had to prepare the images by resizing them all to 200x200 pixels and normalizing their colors. In the end, we reached an accuracy of 76.5%, which is good but lower than the first approach. Our final model kept only one convolution layer, followed by a layer of 16 neurons and an output layer.
+                    <br/><br/>
+                    Other methods were tested to improve the results, such as data augmentation, which creates variations of the images in the training dataset so the model has more data to learn from. But this did not improve the score. Transfer learning was another option we tried, but it also was not enough.
+                    <br/><br/>
+                    The project ended with a report describing the steps we followed to complete the work.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Deepening my knowledge of Python and learning the PyTorch library</li>
+                        <li>Knowledge of how neural networks work and how to improve them</li>
+                        <li>Writing a report</li>
+                        <li>Setting up statistical metrics to analyze a model performance</li>
+                        <li>Identifying the limits of a model</li>
+                        <li>Comparing different approaches to neural networks</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/reseaux_neurones/Image1.png" alt="img" style="width: 570px;"/>
+                    <p class="keywords">Architecture of the neural network for the features descriptor method</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/reseaux_neurones/Image2.png" alt="img" style="width: 341px;"/>
+                    <p class="keywords">Evolution curve of the accuracy during the training of the model </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/reseaux_neurones/Image3.png" alt="img" style="width: 550px;"/>
+                    <p class="keywords">Architecture of the neural network for the Deep learning method</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/reseaux_neurones/Image5.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Example of data augmentation. We see that the second image is a shifted version of the first image, the missing parts are filled with linear interpolation</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

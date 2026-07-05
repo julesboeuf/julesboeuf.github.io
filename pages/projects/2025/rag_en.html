@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="rag_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="rag_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Building a conversational assistant&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    The goal of this project was to build a chabot assistant that makes the search for information easier across the different contracts that IMA offers to the beneficiaries. It was made accessible through a web app and had to answer IMA employees' questions clearly and accurately by pulling out the relevant information from the contracts.
+                    <br/><br/>
+                    To build this project, we had to create a RAG (Retrieval-Augmented Generation) system connected to a database containing all the contract information. A RAG system works by answering user questions based on the documents it has access to. To do this, it talks to a database that gives it the documents that match the question being asked by transforming the sentences into mathematical vectors. Then, by using an AI in an indirect way (in our case, Gemini), it sends the AI the context and the relevant documents so it can answer the question. The final answer is then given back to the user.
+                    <br/><br/>
+                    Extracting the pieces of information from the contracts was done with the Python library BeautifulSoup, which can scrape information from an HTML document. Then, the ChromaDB library gave us access and let us set up a vector database, which makes it easier to search for similar documents. For the interface and the answer-generation part, we used the Genai library, which connects our script to Google's Gemini assistant and lets it generate answers for the user. Streamlit is a Python tool for building web apps, and it let us build a dynamic interface to talk with the assistant.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Understanding how vector databases work</li>
+                        <li>Learning the basics of data tokenization</li>
+                        <li>Using Python</li>
+                        <li>Building a dynamic, interactive interface</li>
+                        <li>Extracting data out of an HTML document</li>
+                        <li>Split a coding project into multiple script and functions to make it modular</li>
+                        <li>Understanding how a RAG system works</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/chatbot/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Overview of the chatbot app</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/chatbot/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Schema explaining our process to build a RAG</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

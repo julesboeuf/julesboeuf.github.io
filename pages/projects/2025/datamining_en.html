@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="datamining_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="datamining_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Carrying out a datamining process&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    The goal of this project was to try and discover new statistical models used for regression and classification problems. We started with a regression tree. Unlike decision trees, where each end node assign a class to an observation, regression trees build their predictions by averaging observations together. During training, the tree makes its predictions by grouping observations that share similar features.
+                    <br/><br/>
+                    This model was tested in Python. The data we used was cleaned and split into a training and a test dataset. The model was then tuned by adjusting its hyperparameters, such as the maximum depth of the tree or the number of variables selected. This approach was compared with several other models (Lasso regression, ElasticNet regression, and PCA-based regression) to verify the precision and quality of the predictions. In the end, the regression tree gave the bests results, with a R² of 63%, compared to a maximum of 42% for the other models.
+                    <br/><br/>
+                    The other statistical tool we discovered was used to solve classification problems: the XGBoost algorithm. It use the gradient boosting strategy, which combines several classification models to build one strong model. This time, it was used for binary classification. Like the previous model, the parameters were tuned, we got stable results, which shows the model was good at classification. The accuracy reached 81% for XGBoost, compared to a maximum of 78% for the other models (KNN, decision tree).
+                    <br/><br/>
+                    Both methods had the advantage of not being sensitive to missing data, either by estimating it automatically or just by handling incomplete observations on their own. Also, comparing them with other models showed they were less likely to overfit. This project ended with a report explaining how these methods work and the steps we followed to learn how to use them.
+                    <br/><br/>
+                    <b>Skills gained:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Knowledge of the Python language</li>
+                        <li>Using regression trees and gradient boosting</li>
+                        <li>Understanding how to prepare data to train a model</li>
+                        <li>Writing a report</li>
+                        <li>Using perfomance metrics and choosing a model</li>
+                        <li>Following a modeling process</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/datamining/Image1.png" alt="img" style="width: 378px;"/>
+                    <p class="keywords">Diagram of the Regression Tree</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/datamining/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Comparison of the differents methods with the coefficient of determination, on the training and validation data</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/datamining/Image3.png" alt="img" style="width: 471px;"/>
+                    <p class="keywords">ROC curve for the results of the XGBoost algorithm</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

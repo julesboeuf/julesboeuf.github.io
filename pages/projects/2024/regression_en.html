@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="regression_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="regression_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Explaining and predicting a quantitative variable from several factors&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    For this project, we used Machine Learning in Python to estimate the value of real-estate properties. We had data with several variables describing the houses, such as median income, geographic location, number of bedrooms, and population. We wrote a Python script to estimate the value of these groups.
+                    <br/><br/>
+                    The estimation of the prices started with a data-cleaning phase, where we had to deal with missing values and extreme values. Since we had 20,300 rows of data and only 7 missing values, we decided to simply remove those rows, since we felt there was still enough data left. For the extreme values, an exploratory analysis showed that the data was not evenly spread, some variables had much more variation than others. Different methods for handling extreme values were tested to deal with this.
+                    <br/><br/>
+                    Once the data was ready, we could start to estimate the value of the properties. The Python library SciPy offered tools to build a Machine Learning model using multiple linear regression. We splitted the data into two sets: a training set and a test set to check the quality of the model. To train the model, we used cross-validation, which tests the model's performance by splitting the data into smaller groups that take turns being the training set and the test set. Once the model was trained, we could make the predictions. The model was tested with different methods for handling extreme values, to see if this changed the results. In the end, the method that gave the best results was the one that kept the extreme values.
+                    <br/><br/>
+                    The project ended by writing a report to summarize the steps we followed to reach our results.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Deepening my knowledge of Python</li>
+                        <li>Learning and using methods for handling extreme values</li>
+                        <li>Learning the basics and case uses of Machine Learning</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+               <div>
+                    <img src="../../../images/projects/2024/rlm/Image1.png" alt="img" style="width: 422px;"/>
+                    <p class="keywords">Overview of the data used</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/rlm/Image2.png" alt="img" style="width: 391px;"/>
+                    <p class="keywords">Some of the results, which show the real and predicted data</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

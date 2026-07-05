@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="datawharehouse_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="datawharehouse_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Data Warehouse&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    The goal of this group project was to build a database that used a Star schema for a fictional sports company. Working with several types of files, we had to sort, clean, and automatically load data into the different tables of the database.
+                    <br/><br/>
+                    The first step was loading and cleaning the data. The company's data was saved across several files in different formats: .csv, .mdb, .xls, and .txt. This part was done in Python. Once loaded, we put the data in their respective tables by joining on shared keys; but the files had duplicate entries, which caused errors during the joins, so these duplicates had to be removed to fix the problem. The tables were then filtered to keep only the data we needed, and cleaned by fixing date formats, data class, and some invalid separators (for example, dates written as MM//DD/YYYY instead of DD/MM/YYYY).
+                    <br/><br/>
+                    Once the cleaning was done, we had to connect the DataBase to Oracle, a database management tool. A Python library allowed us to do this, by creating the tables that did not already exist in the database.
+                    <br/><br/>
+                    The last step was sending the data to Oracle, which was done using Talend, a tool that moves data from one source to another and lets you to manage file imports into Oracle.
+                    <br/><br/>
+                    After loading the data into Oracle, a dashboard to display the sports company's data was built using Power BI. This dashboard tracks the company's performance across several areas: geography, time, production, staff, and customers.
+                    <br/><br/>
+                    A report was written at the end of the project to summarize all the steps.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Using an ETL tool (Talend)</li>
+                        <li>Using a database management tool (Oracle)</li>
+                        <li>Writing a script to develop a full data pipeline, from collecting data to saving it in a database</li>
+                        <li>Deepening my knowledge of Python (cleaning and exporting data)</li>
+                        <li>Handling data from multiple sources (CSV, MDB, TXT, XLS)</li>
+                        <li>Building a database that meets a client's requirements and follows a given structure</li>
+                        <li>Producing documentation that summarizes the work done</li>
+                        <li>Building a Power BI dashboard and connecting it to a DataBase</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2024/datawharehouse/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Schema of the DataBase</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/datawharehouse/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Overview of a Python script for creating a table containing geographic informations</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/datawharehouse/Image3.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Overview of the report</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/datawharehouse/Image4.png" alt="img" style="width: 598px;"/>
+                    <p class="keywords">Overview of the dashboard</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

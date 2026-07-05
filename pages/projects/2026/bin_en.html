@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="bin_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="bin_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Simulating DNA Repair&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    The goal of this group project was to simulate the spatial dynamics of PARP1 proteins on damaged area of DNA. PARP1 plays an important role in DNA repair: it attaches itself to damaged areas and then will mobilizes various molecules that will carry out the repairs.
+                    <br/><br/>
+                    In order to describe and simulate how it moves to a damaged DNA area, simplified models were built using two methods : a random (stochastic) model and a fixed (deterministic) model.
+                    <br/><br/>
+                    The first step was to collect experimental data in a lab, so we could be able to build and optimize our model. We used cells that were modified, by our project tutor, to produce PARP1-GFP proteins, which makes the proteins glow under certain lights. Our protocol was to damage a small area of DNA in the cell nucleus on purpose, then take pictures every two seconds to watch PARP1 arrive and then leave. To measure the evolution of PARP1 amount inside the cell, the pictures were processed using the Fiji software. In these pictures, the PARP1 amount was measured on three area : the damaged area, the rest of the nucleus, and an area outside the cell. The data was then corrected and standardized.
+                    <br/><br/>
+                    The first simulation model used a deterministic approach, with a system of equations describing how PARP1 spreads over time and space.
+                    <br/><br/>
+                    The second model used a stochastic approach. It simulated the movement of each PARP1 molecule in the cell using a random-walk type method. This meant watching the movement of each molecule and giving it a tag depending on whether it was in the damaged DNA area or not.
+                    <br/><br/>
+                    The parameters of the models were then optimized using a grid search, in order to find the best values. All the scripts were written in Python.
+                    <br/><br/>
+                    The project ended with a written report and an oral presentation.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Using the Fiji software to process images</li>
+                        <li>Simulating a biological process in Python</li>
+                        <li>Building and checking a mathematical model using experimental data</li>
+                        <li>Tuning the parameters of a model</li>
+                        <li>Writing a scientific report</li>
+                        <li>Handling and visualizing data with Python</li>
+                        <li>Deepening my knowledge in basic biology</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2026/bin/Image1.png" alt="img" style="width: 300px;;"/>
+                    <p class="keywords">Measured areas : A) the damaged area; B) an area outside the cell; C) the rest of the nucleus </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2026/bin/Image2.png" alt="img" style="width:600px;"/>
+                    <p class="keywords">Evolution of the standardized PARP1 concentration over time (sampling : 1 image / 2 s).</p>
+                </div>           
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

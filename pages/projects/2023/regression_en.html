@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index.html">Home</a>
+            <a href="../../aboutme_en.html">About Me</a>
+            <a href="../../cv_en.html">Resume</a>
+            <a href="../../projects_en.html">>Projects</a>
+            <a href="../../review_en.html">Personal-Review</a>
+            </div>
+            <div class="header_other">
+            <a href="regression_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="regression_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Last update : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Regression on real data&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    For this project, we had to build a model that predicts housing sale prices as accurately as possible, then write a text explaining our approach. We had a training dataset to predict the sale prices. We could use various variables such as the type of housing for sale or its floor area. The statistical programming language R was used for these calculations.
+                    <br/><br/>
+                    To build our prediction model, we first had to choose the variable that would let us predict the housing sale price. An exploratory analysis showed that the most useful variable was the floor area of the home, and since location also matters, we decided to build a separate model for each city, predicting sale price based on floor area.
+                    <br/><br/>
+                    In order to make our code more efficient and avoid writing the same formulas over and over for each city, we built functions so we could write the code once and apply it to each city.
+                    <br/><br/>
+                    <b>Skills learned:</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Improving my knowledge of R</li>
+                        <li>Understanding how linear regression works and when to use it</li>
+                        <li>Improving my writing skills</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2023/regression/Image1.png" alt="img" style="width: 371px;"/>
+                    <p class="keywords">The R function that allowed us to use our logarithmic model to estimate the housing sale prices</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2023/regression/Image2.png" alt="img" style="width: 177px;"/>
+                    <p class="keywords">Results in Excel</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2023/regression/Image3.png" alt="img" style="width: 505px;"/>
+                    <p class="keywords">Overview of the report</p>
+                </div>
+                
+            </div>
+
+
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

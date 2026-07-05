@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="fani_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="fani_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Utilisation des séries temporelles&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    L’objectif de projet était de prédire l’activité sismique du volcan Fani Maorè à partir de données enregistrées entre 2018 et 2025. Afin de faire face à l’évolution du volcan il était important de pouvoir connaître l’évolution de son activité sous plusieurs angles : fréquence de l’activité, puissance des évènements, et position géographique. Pour parvenir à cela, nous disposions de différents jeux de données mesurant différentes variables des évènements sismique du volcan : position, magnitude, profondeur, et date. L’outil de travail utilisé pour ce projet était le langage de programmation R.
+                    <br/><br/>
+                    Un premier enjeu était de valider l’exactitude des données, nous avions au total 3 sources différentes à mettre en commun : les données de 2018-2019 provenant d’une base annexe fournie par le commanditaire, les données sur la période 2019-2024 provenant d’un groupe de surveillance sismique à Mayotte (REVOSIMA), puis des données sur la période de 2021-2025 en libre accès par l’IPGP. Les données ont alors été comparées, nettoyées puis fusionnées en faisant attention à ne pas conserver de doublons. Ces dernières ont ensuite été enrichies par l’ajout de nouvelles variables. Une analyse descriptive a montré que la magnitude moyenne s’élevait à 2, avec une variabilité importante. La tendance générale de l’activité semblait être à la baisse au cours des années.
+                    <br/><br/>
+                    Au total, quatre types de modèle ont été mis en place : série temporelle, lissage exponentiel double, lissage exponentiel triple, ARIMA. Des tests de stationnarité ont été mené afin de vérifier la présence d’une saisonnalité. Après leur mise en place, des indicateurs statistiques ont été développés afin de comparer leurs performances. Concernant les prédictions sur l’évolution de la fréquence de séismes, le modèle ARIMA présentaient les résultats les plus hauts avec un R² de 57% et une erreur moyenne de 1.8 séismes par jour, pour une moyenne journalière de 4.5 séismes. Les autres modèles n’ont pas réussi à expliquer les variations de l’activité sismique et donnaient de faibles résultats, mis à part pour le lissage exponentiel double qui avait un R² de 53% et une erreur moyenne de 1.9.
+                    <br/><br/>
+                    Pour améliorer cela, nous avons tenté de séparer les données en deux clusters géographiques afin de regarder si entraîner un modèle par groupe provoquerait une hausse des performances. Mais au final, les résultats ont baissé et cette méthode a entraîné, selon les modèles, une sous-estimation de l’activité sismique du volcan.
+                    <br/><br/>
+                    Le projet a été rendu sous la forme d’un document R Markdown, permettant de faciliter l’ajout de commentaires au fur et à mesure du script.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Utilisation et compréhension des séries temporelles</li>
+                        <li>Comparaison de modèles statistiques et sélection sur la base d’indicateurs</li>
+                        <li>Capacité de rédaction et mise en valeurs de résultats</li>
+                        <li>Visualisation graphique de données estimées et réelles</li>
+                        <li>Mise en place d’indicateurs statistiques</li>
+                        <li>Approfondissement du langage de programmation R</li>
+                        <li>Validation et normalisation de différentes sources de données</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/series_temp/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Représentation cartographique de la dispersion des évènements sismiques sur la période 2021-2025 </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/series_temp/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Courbe d'évolution de la fréquence des évènements sismiques sur la période 2018-2025</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/series_temp/Image3.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Comparaison des données réelles et des estimations du modèle lissage exponentiel double </p>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

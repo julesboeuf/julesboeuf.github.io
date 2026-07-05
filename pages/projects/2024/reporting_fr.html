@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="reporting_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="reporting_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Reporting d’une analyse multivariée&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    Le but de ce projet était d’analyser le taux de pauvreté en France en proposant divers indicateurs à travers une interface web. L’application finale devait proposer les fonctionnalités suivantes : analyser l’évolution du taux de pauvreté dans le temps et l’espace, réaliser une analyse multi-factorielle et présenter une modélisation économétrique.
+                    <br/><br/>
+                    L’ensemble du projet a été réalisé avec RShiny, une librairie du langage R permettant de créer des applications web. Nous avons alors récupéré des données de l’INSEE sur le taux de pauvreté par département afin d’analyser la répartition du taux de pauvreté à cette échelle, et en constater son évolution au fur et à mesure des années. Des options permettent à l’utilisateur de faire un focus sur le département de son choix et choisir l’année qui l’intéresse pour connaître le taux de pauvreté. Ensuite, les données ont été analysées au niveau régional, nous avons utilisé l’algorithme k-means pour créer des clusters au sein des régions afin d’identifier et regrouper celles où le taux de pauvreté agit de la même façon, l’utilisateur avait la possibilité de choisir le nombre de cluster maximum dans lesquels on pouvait regrouper les régions. La dernière modélisation effectuée est une régression linéaire, à partir de plusieurs variables des données concernant le taux de pauvreté en France au niveau départemental nous cherché à trouver celle expliquant le mieux le taux de pauvreté selon le département, ce qui s’est trouvé être la part des prestations sociales que les ménages reçoivent dans le département.
+                    <br/><br/>
+                    Le projet s’est conclu sur une présentation de l’application produite, avec une démonstration de ses fonctionnalités et une discussion des résultats.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Approfondissement de mes connaissances en R</li>
+                        <li>Création d’une interface dynamique et interactive</li>
+                        <li>Production d’indicateurs permettant l’aide à la décision</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2024/rshiny/Image1.png" alt="img" style="width: 564px;"/>
+                    <p class="keywords">Analyse du taux de pauvreté dans le temps et l'espace</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/rshiny/Image2.png" alt="img" style="width: 564px;"/>
+                    <p class="keywords">Analyse multivariée</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/rshiny/Image3.png" alt="img" style="width: 557px;"/>
+                    <p class="keywords">Modélisation économétrique</p>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

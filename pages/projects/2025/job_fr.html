@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="job_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="job_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;CDD à l’INRAE&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    Ce CDD s’est déroulé au sein de l’unité URPF3 du centre INRAE de Nouvelle-Aquitaine-Poitiers à Lusignan (France), et s’inscrivait dans la continuité de mon stage de BUT3. Ce dernier avait pour objectif d’analyser et comparer la croissance de plantes de blé d’hiver sous différentes conditions climatique spécifiques. Pour rendre cela possible, un outil de simulation de développement de plante se nommant CN-Wheat a été utilisé. Les données météorologiques en entrée provenaient de méthode statistique se nommant les années typiques météorologiques, qui j’avais pu développer durant mon stage de BUT2.
+                    <br/><br/>
+                    Pour ce contrat, il fallait développer une interface graphique dynamique permettant de visualiser la simulation d’une croissance de plante simulée en temps réel, avec des indicateurs permettant de comparer son développement selon différents scénarios climatiques.
+                    <br/><br/>
+                    Pour mettre en place cela, une chaîne de traitement en Python a été développée permettant de nettoyer et filtrer les données météorologiques afin de les mettre en entrée du modèle CN-Wheat. La plateforme Climatik a été utilisée afin d’envoyer des requêtes journalières pour récupérer la météo récente. Une fois que les données étaient prêtes, les simulations se lançaient pour chaque scénario climatique à modéliser. Les résultats étaient ensuite récupérés puis analysés pour calculer différents indicateurs de développement tel que le LAI (Leaf Area Index).
+                    <br/><br/>
+                    Une interface graphique a ensuite été mis en place sous la forme d’une image PNG se mettant à jour toutes les heures pour afficher les indicateurs de développement, des informations sur la météo, ainsi qu’une visualisation du modèle 3D de la plante.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Compréhension et utilisation d’un outil Python destiné à la modélisation</li>
+                        <li>Manipulation d’images PNG et SVG</li>
+                        <li>Mise en place d’une chaîne de traitement automatisé et modulaire en Python</li>
+                        <li>Gestion et optimisation d’une quantité importante de données</li>
+                        <li>Interprétation des demandes et des besoins d’un commanditaire</li>
+                        <li>Sélection d’indicateurs statistiques adaptés au contexte</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/job2/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Exemple d'affichage généré</p>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

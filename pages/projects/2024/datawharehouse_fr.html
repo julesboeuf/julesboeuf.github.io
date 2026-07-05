@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="datawharehouse_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="datawharehouse_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Intégration des données dans un Datawarehouse&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    L’objectif de ce projet était de construire une base de données suivant un schéma en étoile pour une entreprise fictive de sport. À partir de plusieurs fichiers, nous devions trier, nettoyer, et alimenter automatiquement les différentes tables de la base de données.
+                    <br/><br/>
+                    La première étape fut l’import et le nettoyage des données, les données de l’entreprises étaient réparties dans plusieurs fichiers de différents formats : .csv, .mdb, .xls et .txt. Cette partie s’est faite en Python. Une fois importées, nous avons classé les données selon leur table respective en faisant une jointure sur leurs clés, les fichiers présentaient des problèmes de doublons ce qui provoquait des erreurs dans la jointure, il a alors fallu supprimer ces doublons afin de résoudre le problème. Les tables ont été par la suite filtrées pour ne conserver que les données qui nous intéressaient, nous les avons ensuite nettoyées en changeant des formats de dates, de données et certains séparateurs qui n’étaient pas valide (exemple : des dates au format DD//MM/YYYY au lieu de DD/MM/YYYY).
+                    <br/><br/>
+                    Une fois le nettoyage effectué, il fallait alors créer une connexion avec la base de données, gérée avec Oracle, un logiciel de gestion de base de données. Une librairie Python permettait de faire cela, en créant si besoin les tables qui n’existaient pas déjà dans la base de données.
+                    <br/><br/>
+                    La dernière étape a été d’envoyer les données vers Oracle, ce qui a été fait avec Talend, qui permet de transmettre des données vers une autre source de données et permet donc d’automatiser l’import des fichiers vers Oracle. Une documentation de toute ces étapes ont été produite afin de faire une synthèse du projet.
+                    <br/><br/>
+                    En important les données depuis Oracle, un Dashboard permettant la visualisation des données de l’entreprise de sport a été réalisé avec PowerBI. Ce tableau de bord suit les performances de l’entreprise sous plusieurs dimensions : géographique, temporelle, production, effectifs et clients.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Utilisation d’un ETL (Talend)</li>
+                        <li>Utilisation d’un logiciel de gestion de base de données (Oracle)</li>
+                        <li>Réalisation d’un script permettant d’automatiser la chaîne de traitement d’une information, de sa récupération jusqu’à son enregistrement dans une base de données</li>
+                        <li>Approfondissement de mes connaissances en Python (nettoyage et export des données)</li>
+                        <li>Gestion de données venant de multiples sources (CSV, MDB, TXT, XLS)</li>
+                        <li>Création d’une base de données respectant des contraintes du commanditaire et suivant un schéma précis</li>
+                        <li>Production d’une documentation faisant synthèse du travail réalisé</li>
+                        <li>Création d’un tableau de bord sous PowerBI, alimenté depuis une base de données</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2024/datawharehouse/Image1.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Schéma de la base de données </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/datawharehouse/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Extrait du script, préparant une table de la base de données concernant la dimension géographique de l'entreprise</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/datawharehouse/Image3.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Extrait du rapport</p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2024/datawharehouse/Image4.png" alt="img" style="width: 598px;"/>
+                    <p class="keywords">Extrait du Dashboard</p>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>

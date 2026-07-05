@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <!-- Page attributes -->
+    <head>
+
+        <!-- Encoding -->
+        <meta charset="utf-8" />
+
+        <!-- Website visualisation -->
+        <meta name="viewport" content="width=device-width" />
+
+        <!-- Website stylesheet -->
+        <link href="../../../styles/style.css" rel="stylesheet" />
+
+        <!-- Website title -->
+        <title>Portfolio - BOEUF Jules</title>
+
+    </head>
+
+    <!-- Page contents -->
+    <body>
+
+        <!-- Header -->
+         <header>
+
+            <!-- Page navigation -->
+            <div class="header_nav">
+            <a class="header_pres">Portfolio - BOEUF Jules</a>
+            <a href="../../../index_fr.html">Accueil</a>
+            <a href="../../aboutme_fr.html">A propos de moi</a>
+            <a href="../../cv_fr.html">CV</a>
+            <a href="../../projects_fr.html">>Projets</a>
+            <a href="../../review_fr.html">Bilan personnel</a>
+            </div>
+            <div class="header_other">
+            <a href="datamining_en.html" class="header_lang">EN <img src="../../../images/flag-uk.png" alt=""/></a>
+            <a href="datamining_fr.html" class="header_lang">FR <img src="../../../images/flag-fr.png" alt=""/></a>
+            <a class="header_info">Dernière MÀJ : 05/07/2026</a>
+            </div>
+
+         </header>
+
+        <!-- Main content -->
+        <main>
+
+            <!-- Division for website presentation -->
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Mise en oeuvre d’un processus de DataMining&nbsp;&nbsp;</h1>
+
+                <p style="width: 550px;">
+                    Le but de ce projet était de découvrir de nouveaux outils statistiques utilisés dans des problèmes de régression et de classification. La méthode avec laquelle nous avons débuté était un arbre de régression. À la différence des arbres de décision où chaque nœud final contient une classe que l’on peut attribuer à notre observation, les arbres de régression construisent leurs prédictions en faisant des moyennes d’observation. C’est lors de la phase d’entraînement qu’il va préparer ses prédictions agrégant les observations ayant des caractéristiques ressemblantes.
+                    <br/><br/>
+                    Cette méthode a été prise en main sur le langage Python, les données utilisées ont été nettoyées puis séparées en un jeu d’entraînement et de test. Puis le modèle a été paramétré en optimisant ses hyperparamètres, tels que : la profondeur maximum de l’arbre, ou le nombre de variables utilisées. Cette approche a été comparée à plusieurs modèles (régression Lasso, régression ElasticNet, et régression avec AC) pour tester son efficacité. Finalement, l’arbre de régression était plus adapté pour donner des résultats pertinents : avec un R² en test de 63%, contre 42% au maximum pour les autres modèles.
+                    <br/><br/>
+                    L’autre outil statistique découvert servait à résoudre des problèmes de classification, il s’agissait de l’algorithme XGBoost. Il repose sur la technique du gradient boosting, qui consiste à combiner plusieurs modèles de classification pour en créer un performant. Cette fois-ci, il a été utilisé pour de la classification binaire. En suivant les mêmes étapes que pour le modèle précédent pour l’optimiser, nous obtenons des résultats stables qui témoigne de la bonne discrimination des classes par le modèle. Le taux de bien classé obtenu montait à 81% pour XGBoost, contre 78% au maximum pour les méthodes de comparaison (KNN, arbre de décision).
+                    <br/><br/>
+                    Les deux méthodes avaient le point positif de ne pas être sensibles aux données manquantes, soit en les estimant automatiquement, soit en prévoyant des estimations pour les observations incomplètes. De plus, réaliser une comparaison par rapport autres modèles a permis de montrer qu’elles étaient moins sensibles au sur-apprentissage. Ce projet s’est fini sur la rédaction d’un rapport expliquant le principe de fonctionnement de ces méthodes, et la démarche que nous avions suivie pour les prendre en main.
+                    <br/><br/>
+                    <b>Compétences acquises :</b>
+                    <ul style="list-style-type:disc;width: 500px;">
+                        <li>Connaissances du langage Python</li>
+                        <li>Utilisation des arbres de régression et du gradient boosting</li>
+                        <li>Compréhension des traitements à effectuer pour préparer des données à l’alimentation d’un modèle</li>
+                        <li>Rédaction d’un rapport</li>
+                        <li>Interprétation d’indicateurs statistiques et sélection d’un modèle</li>
+                        <li>Mise en place d’un processus de modélisation</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="project_detail">
+                <h1>&nbsp;&nbsp;Illustrations&nbsp;&nbsp;</h1>
+                <div>
+                    <img src="../../../images/projects/2025/datamining/Image1.png" alt="img" style="width: 378px;"/>
+                    <p class="keywords">Schéma de l'arbre de régression final </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/datamining/Image2.png" alt="img" style="width: 600px;"/>
+                    <p class="keywords">Comparaison du coefficient de détermination en situation d'apprentissage et de test, selon les méthodes </p>
+                </div>
+                <div>
+                    <img src="../../../images/projects/2025/datamining/Image3.png" alt="img" style="width: 471px;"/>
+                    <p class="keywords">Courbe de ROC calculée sur les résultats de l'algorithme XGBoost </p>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <!-- Footer -->
+         <footer>
+
+            (c) 2026 Jules Boeuf
+
+         </footer>
+
+    </body>
+
+</html>
